@@ -55,19 +55,19 @@ export class HomePage {
   updateTodo(todo){
 
     let prompt = this.alertCtrl.create({
-      title: 'Edit',
-      message: 'Change your mind?',
+      title: 'Editar',
+      message: 'Cambiar?',
       inputs: [
         {
-          name: 'title'
+          name: 'tituto'
         }
       ],
       buttons: [
         {
-          text: 'Cancel'
+          text: 'Cancelar'
         },
         {
-          text: 'Save',
+          text: 'Guardar',
           handler: data => {
             this.todoService.updateTodo({
               _id: todo._id,
